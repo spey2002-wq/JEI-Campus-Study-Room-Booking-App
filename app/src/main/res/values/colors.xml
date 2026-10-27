@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="jei_blue">#1F4E9C</color>
+    <color name="jei_blue_dark">#143670</color>
+    <color name="jei_blue_light">#DCE6F7</color>
+    <color name="jei_accent">#F2A900</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="black">#FF000000</color>
+
+    <color name="status_confirmed">#1F6FEB</color>
+    <color name="status_completed">#2E9E5B</color>
+    <color name="status_cancelled">#8A8F98</color>
+    <color name="badge_available">#2E9E5B</color>
+    <color name="badge_closed">#8A8F98</color>
+    <color name="error_red">#C62828</color>
+</resources>

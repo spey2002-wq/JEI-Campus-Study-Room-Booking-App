@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/roomListFragment">
+
+    <!-- 1. Browse rooms (start destination) -->
+    <fragment
+        android:id="@+id/roomListFragment"
+        android:name="com.jei.campusbooking.ui.rooms.RoomListFragment"
+        android:label="@string/title_rooms"
+        tools:layout="@layout/fragment_room_list"
+        xmlns:tools="http://schemas.android.com/tools">
+        <action
+            android:id="@+id/action_roomList_to_roomDetail"
+            app:destination="@id/roomDetailFragment" />
+    </fragment>
+
+    <!-- 2. Room information + booked slots -->
+    <fragment
+        android:id="@+id/roomDetailFragment"
+        android:name="com.jei.campusbooking.ui.detail.RoomDetailFragment"
+        android:label="@string/title_room_detail"
+        tools:layout="@layout/fragment_room_detail"
+        xmlns:tools="http://schemas.android.com/tools">
+        <argument
+            android:name="roomId"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_roomDetail_to_bookingApply"
+            app:destination="@id/bookingApplyFragment" />
+    </fragment>
+
+    <!-- 3. Booking form -->
+    <fragment
+        android:id="@+id/bookingApplyFragment"
+        android:name="com.jei.campusbooking.ui.booking.BookingApplyFragment"
+        android:label="@string/title_book_room"
+        tools:layout="@layout/fragment_booking_apply"
+        xmlns:tools="http://schemas.android.com/tools">
+        <argument
+            android:name="roomId"
+            app:argType="integer" />
+        <argument
+            android:name="selectedDate"
+            android:defaultValue=""
+            app:argType="string" />
+        <!-- after a successful booking: clear the form + detail screens from the back stack -->
+        <action
+            android:id="@+id/action_bookingApply_to_myBookings"
+            app:destination="@id/myBookingsFragment"
+            app:popUpTo="@id/roomListFragment" />
+    </fragment>
+
+    <!-- 4. Booking history -->
+    <fragment
+        android:id="@+id/myBookingsFragment"
+        android:name="com.jei.campusbooking.ui.mybookings.MyBookingsFragment"
+        android:label="@string/title_my_bookings"
+        tools:layout="@layout/fragment_my_bookings"
+        xmlns:tools="http://schemas.android.com/tools" />
+</navigation>

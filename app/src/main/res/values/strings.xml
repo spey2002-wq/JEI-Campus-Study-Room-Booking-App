@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">JEI Study Rooms</string>
+
+    <!-- Navigation / titles -->
+    <string name="title_rooms">JEI Study Rooms</string>
+    <string name="title_room_detail">Room Details</string>
+    <string name="title_book_room">Book a Room</string>
+    <string name="title_my_bookings">My Bookings</string>
+    <string name="menu_rooms">Rooms</string>
+    <string name="menu_my_bookings">My Bookings</string>
+
+    <!-- Room list -->
+    <string name="search_hint">Search room or building…</string>
+    <string name="chip_all">All</string>
+    <string name="chip_2_plus">2+ people</string>
+    <string name="chip_4_plus">4+ people</string>
+    <string name="chip_8_plus">8+ people</string>
+    <string name="no_rooms">No rooms match your search.</string>
+    <string name="room_floor_format">%1$s, %2$dF</string>
+    <string name="capacity_format">Capacity: %1$d</string>
+    <string name="badge_available">Available</string>
+    <string name="badge_closed">Closed</string>
+
+    <!-- Room detail -->
+    <string name="label_building">Building</string>
+    <string name="label_floor">Floor</string>
+    <string name="label_capacity">Capacity</string>
+    <string name="label_equipment">Equipment</string>
+    <string name="label_status">Status</string>
+    <string name="floor_format">%1$dF</string>
+    <string name="people_format">%1$d people</string>
+    <string name="booked_slots">Booked time slots</string>
+    <string name="no_bookings_day">No bookings on this day – the whole day is free.</string>
+    <string name="btn_book_room">Book This Room</string>
+    <string name="room_closed_hint">This room is closed for booking.</string>
+    <string name="prev_day">Previous day</string>
+    <string name="next_day">Next day</string>
+
+    <!-- Booking form -->
+    <string name="room_summary_format">Room: %1$s (%2$s)</string>
+    <string name="label_date">Date</string>
+    <string name="label_start_time">Start time</string>
+    <string name="label_end_time">End time</string>
+    <string name="label_purpose">Purpose</string>
+    <string name="purpose_group_study">Group Study</string>
+    <string name="purpose_presentation">Presentation</string>
+    <string name="purpose_self_study">Self Study</string>
+    <string name="purpose_other">Other</string>
+    <string name="btn_cancel">Cancel</string>
+    <string name="btn_submit">Submit</string>
+    <string name="error_conflict">This time slot is already booked!</string>
+    <string name="error_past_date">The date cannot be in the past.</string>
+    <string name="error_past_time">The start time has already passed.</string>
+    <string name="error_end_before_start">The end time must be after the start time.</string>
+    <string name="error_too_long">A booking can be at most 3 hours.</string>
+    <string name="error_pick_all">Please choose a date, start time and end time.</string>
+    <string name="error_room_closed">This room is currently closed.</string>
+    <string name="booking_saved">Booking confirmed!</string>
+
+    <!-- My bookings -->
+    <string name="chip_confirmed">Confirmed</string>
+    <string name="chip_completed">Completed</string>
+    <string name="chip_cancelled">Cancelled</string>
+    <string name="no_bookings">No bookings yet.</string>
+    <string name="btn_check_out">Check-out</string>
+    <string name="purpose_format">Purpose: %1$s</string>
+    <string name="time_range_format">%1$s   %2$s – %3$s</string>
+    <string name="cancel_title">Cancel booking?</string>
+    <string name="cancel_message">Do you really want to cancel this reservation?</string>
+    <string name="btn_yes">Yes, cancel</string>
+    <string name="btn_no">Keep it</string>
+    <string name="booking_cancelled">Booking cancelled.</string>
+    <string name="booking_completed">Checked out. Thank you!</string>
+</resources>
